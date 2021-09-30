@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd2a5;
+}
+.parent {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0 25px rgb(0 0 0 / 15%);
+}
+.parent > img {
+  width: 100%;
+  background-size: cover;
+}
+.parent .content {
+  padding: 10px 20px 20px;
+}
+.parent .content .header {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.parent .content .header .txt h3 {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: normal;
+  color: #595959;
+}
+.parent .content .header .txt .by {
+  color: #999;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.parent .content .header .txt .by span {
+  color: #009688;
+  position: relative;
+  cursor: pointer;
+}
+.parent .content .header .txt .by span::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #009688;
+  transition: 0.3s;
+}
+.parent .content .header .txt .by span:hover::after {
+  width: 100%;
+}
+.parent .content .header img {
+  width: 70px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: relative;
+  right: 20px;
+  top: -45px;
+  box-shadow: 0 0 16px rgb(0 0 0 / 20%);
+}
+.parent .content p {
+  color: #999;
+}
+.parent .content > p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+.parent .content .location {
+  margin-bottom: 10px;
+  color: #808080;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.parent .content .location i {
+  color: #009688;
+  padding-right: 5px;
+}
+.parent .content .data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.parent .content .data .bar {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 20px;
+  background-color: #eee;
+  position: relative;
+  overflow: hidden;
+}
+.parent .content .data .bar::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #009688;
+}
+.parent .content .data .box p::first-letter {
+  text-transform: capitalize;
+}
+.parent .content .data .box div {
+  font-weight: bold;
+  color: #595965;
+  margin-bottom: 5px;
+  text-align: center;
+}
